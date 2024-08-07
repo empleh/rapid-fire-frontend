@@ -1,0 +1,22 @@
+ion-app {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    "header"
+    "content";
+}
+
+app-header {
+  width: 100vw;
+  grid-area: header;
+}
+
+#main-content {
+  width: 100vw;
+  grid-area: content;
+  background-color: var(--ion-color-light);
+}

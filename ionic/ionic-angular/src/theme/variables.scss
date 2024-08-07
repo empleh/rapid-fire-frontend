@@ -1,2 +1,70 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+$spacing-size-xs: 2px;
+$spacing-size-sm: (
+  $spacing-size-xs * 2 // 4px
+);
+$spacing-size-md: (
+  $spacing-size-sm * 2 // 8px
+);
+$spacing-size-lg: (
+  $spacing-size-md * 2 // 16px
+);
+$spacing-size-xl: (
+  $spacing-size-lg * 2 // 32px
+);
+$spacing-size-xxl: (
+  $spacing-size-xl * 2 // 64px
+);
+$spacing-size-xxxl: (
+  $spacing-size-xxl * 2 // 128px
+);
+
+// Font Size Variables
+$font-size-xs: 0.875rem;
+$font-size-sm: 1rem;
+$font-size-md: 1.125rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 1.75rem;
+$font-size-xxxl: 2rem;
+
+// Border Variables
+$border-size-sm: 2px;
+$border-size-md: 4px;
+$border-size-lg: 6px;
+$border-size-xl: 8px;
+
+ion-toolbar {
+  --ion-toolbar-background: --ion-color-primary;
+  --border-width: 0 !important;
+  padding-bottom: $spacing-size-sm;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: var(--ion-color-primary);
+  color: var(--ion-color-secondary-contrast);
+}
+
+
+ion-tab-bar {
+  height: 96px;
+  background: var(--ion-color-primary);
+}
+
+ion-tab-button {
+  background: var(--ion-color-primary);
+  color: var(--ion-color-secondary-contrast);
+}
+
+ion-label {
+  font-size: $font-size-xs;
+  padding: 0;
+}
+
+.selected {
+  color: var(--ion-color-primary);
+  background: var(--ion-color-primary-light);
+}
