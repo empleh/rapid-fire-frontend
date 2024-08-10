@@ -1,0 +1,21 @@
+.glass-overlay {
+  position: fixed;
+  top: 25%;
+  bottom: 25%;
+  left: 40px;
+  right: 40px;
+  z-index: 100;
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 50%;
+}
+
+.lightblue {
+  background: linear-gradient(145deg, #e6f7ff, #c7e9f1);
+}

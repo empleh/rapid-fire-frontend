@@ -4,6 +4,7 @@ import { IonicModule, ModalController } from '@ionic/angular';
 import { ComponentRef } from '@ionic/core';
 import { AnimatedBorderComponent } from '../animated-border/animated-border.component';
 import { BreakoutCircleComponent } from '../breakout-circle/breakout-circle.component';
+import { GlassmorphismComponent } from '../glassmorphism/glassmorphism.component';
 import { ScrollsBothWaysComponent } from '../scrolls-both-ways/scrolls-both-ways.component';
 
 @Component({
@@ -38,7 +39,7 @@ export class HomePage {
     },
     {
       title: 'Glassmorphism',
-      component: AnimatedBorderComponent,
+      component: GlassmorphismComponent,
       image: 'glassmorphism.jpg',
     }
   ]);
