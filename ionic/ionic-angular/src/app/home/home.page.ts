@@ -1,10 +1,11 @@
 import { NgForOf } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
-import { IonicModule, ModalController } from '@ionic/angular';
-import { ComponentRef } from '@ionic/core';
+import { IonicModule } from '@ionic/angular';
 import { AnimatedBorderComponent } from '../animated-border/animated-border.component';
 import { BreakoutCircleComponent } from '../breakout-circle/breakout-circle.component';
+import { CircleSliderComponent } from '../circle-slider/circle-slider.component';
 import { GlassmorphismComponent } from '../glassmorphism/glassmorphism.component';
+import { NavUtilityService } from '../nav-utility.service';
 import { ScrollsBothWaysComponent } from '../scrolls-both-ways/scrolls-both-ways.component';
 
 @Component({
@@ -15,7 +16,7 @@ import { ScrollsBothWaysComponent } from '../scrolls-both-ways/scrolls-both-ways
   imports: [IonicModule, NgForOf],
 })
 export class HomePage {
-  private modalCtrl: ModalController = inject(ModalController);
+  private navUtility: NavUtilityService = inject(NavUtilityService);
   public examples = signal([
     {
       title: 'Animated Border',
@@ -29,7 +30,7 @@ export class HomePage {
     },
     {
       title: 'Circle Slider',
-      component: AnimatedBorderComponent,
+      component: CircleSliderComponent,
       image: 'circle-slider.jpg',
     },
     {
@@ -44,19 +45,7 @@ export class HomePage {
     }
   ]);
 
-  async openExample(component: ComponentRef, componentProps: any = {}) {
-    const modal = await this.modalCtrl.create({
-      component,
-      componentProps,
-      animated: true,
-      breakpoints: [0, 1],
-      initialBreakpoint: 1,
-      handle: true,
-      backdropDismiss: true,
-    });
-
-    await modal.present();
-
-    return modal;
+  async openExample(example: any) {
+    await this.navUtility.openExample(example);
   }
 }

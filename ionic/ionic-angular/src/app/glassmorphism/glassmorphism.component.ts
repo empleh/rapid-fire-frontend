@@ -1,6 +1,7 @@
 import { NgForOf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { ModalHeaderComponent } from '../modal-header/modal-header.component';
 
 @Component({
   selector: 'app-glassmorphism',
@@ -9,7 +10,8 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [
     IonicModule,
-    NgForOf
+    NgForOf,
+    ModalHeaderComponent
   ]
 })
 export class GlassmorphismComponent  implements OnInit {

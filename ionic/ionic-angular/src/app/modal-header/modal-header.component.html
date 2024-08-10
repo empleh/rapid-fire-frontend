@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title class="title-large" *ngIf="title as title">
+      {{ title }}
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()" color="dark" fill="none">
+        Close
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

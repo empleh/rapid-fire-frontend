@@ -1,0 +1,14 @@
+<app-modal-header></app-modal-header>
+<ion-content>
+  <div class="content-wrapper green">
+    <h1>Circle Slider</h1>
+
+    <div class="circle-wrapper">
+      <div id='circle'>
+        <div id='slider' #slider></div>
+        <p class="value">{{ angle() }}</p>
+      </div>
+      <input id="test" type="text" value="" class="range" data-max="50" data-min="0" data-step="1" name="angle">
+    </div>
+  </div>
+</ion-content>

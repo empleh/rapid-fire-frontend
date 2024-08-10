@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { add, camera, homeOutline, alertCircleOutline } from 'ionicons/icons';
+import { ModalHeaderComponent } from '../modal-header/modal-header.component';
 
 @Component({
   selector: 'app-breakout-circle',
@@ -9,7 +10,8 @@ import { add, camera, homeOutline, alertCircleOutline } from 'ionicons/icons';
   styleUrls: ['./breakout-circle.component.scss'],
   standalone: true,
   imports: [
-    IonicModule
+    IonicModule,
+    ModalHeaderComponent
   ]
 })
 export class BreakoutCircleComponent {
