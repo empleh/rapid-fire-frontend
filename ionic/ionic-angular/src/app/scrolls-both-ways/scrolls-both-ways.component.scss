@@ -1,0 +1,33 @@
+.horizontal {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  width: calc(100vw - 50px);
+  gap: 10px;
+
+  li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    border: 1px solid cyan;
+  }
+}
+
+.vertical{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    border: 1px solid purple;
+  }
+}

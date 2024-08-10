@@ -4,6 +4,7 @@ import { IonicModule, ModalController } from '@ionic/angular';
 import { ComponentRef } from '@ionic/core';
 import { AnimatedBorderComponent } from '../animated-border/animated-border.component';
 import { BreakoutCircleComponent } from '../breakout-circle/breakout-circle.component';
+import { ScrollsBothWaysComponent } from '../scrolls-both-ways/scrolls-both-ways.component';
 
 @Component({
   selector: 'app-home',
@@ -21,19 +22,24 @@ export class HomePage {
       image: 'animated-border.jpg',
     },
     {
+      title: 'Breakout Circle',
+      component: BreakoutCircleComponent,
+      image: 'circle-breakout.jpg',
+    },
+    {
       title: 'Circle Slider',
       component: AnimatedBorderComponent,
       image: 'circle-slider.jpg',
     },
     {
       title: 'Scrolls both Ways',
-      component: AnimatedBorderComponent,
-      image: 'scrolls-both-ways.jpg',
+      component: ScrollsBothWaysComponent,
+      image: 'scrollsbothways.jpg',
     },
     {
-      title: 'Breakout Circle',
-      component: BreakoutCircleComponent,
-      image: 'circle-breakout.jpg',
+      title: 'Glassmorphism',
+      component: AnimatedBorderComponent,
+      image: 'glassmorphism.jpg',
     }
   ]);
 

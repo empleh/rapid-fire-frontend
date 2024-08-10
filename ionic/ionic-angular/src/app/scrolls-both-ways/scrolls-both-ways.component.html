@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="content-wrapper">
+    <h1>Scrolls Both Ways</h1>
+    <p>
+      https://via.placeholder.com/50
+    </p>
+
+    <ul class="horizontal">
+      <li *ngFor="let i of images()">
+        <ion-img [src]="i"></ion-img>
+      </li>
+    </ul>
+
+    <ul class="vertical">
+      <li *ngFor="let i of images()">
+        <ion-img [src]="i"></ion-img>
+      </li>
+    </ul>
+  </div>
+</ion-content>
