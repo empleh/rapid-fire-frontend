@@ -1,0 +1,27 @@
+.title {
+  font-size: clamp(1.5rem, 4vw, 5rem);
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.rect {
+  background-color: #4a90e2;
+  color: white;
+  width: clamp(250px, 50vw, 600px);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.width-info {
+  font-size: 1rem;
+}

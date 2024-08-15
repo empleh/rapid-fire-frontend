@@ -6,10 +6,14 @@ import { AnimatedBorderComponent } from '../animated-border/animated-border.comp
 import { BreakoutCircleComponent } from '../breakout-circle/breakout-circle.component';
 import { CardFlipComponent } from '../card-flip/card-flip.component';
 import { CircleSliderComponent } from '../circle-slider/circle-slider.component';
+import { ClampComponent } from '../clamp/clamp.component';
+import { DarkModeComponent } from '../dark-mode/dark-mode.component';
 import { FloatingLabelComponent } from '../floating-label/floating-label.component';
 import { GlassmorphismComponent } from '../glassmorphism/glassmorphism.component';
+import { InfiniteScrollComponent } from '../infinite-scroll/infinite-scroll.component';
 import { NavUtilityService } from '../nav-utility.service';
 import { ScrollsBothWaysComponent } from '../scrolls-both-ways/scrolls-both-ways.component';
+import { SwitchesComponent } from '../switches/switches.component';
 
 @Component({
   selector: 'app-home',
@@ -60,6 +64,26 @@ export class HomePage {
       title: 'Card Flip',
       component: CardFlipComponent,
       image: 'flip-cards.jpg',
+    },
+    {
+      title: 'Infinite Scroll',
+      component: InfiniteScrollComponent,
+      image: 'infinite-scroll.jpg',
+    },
+    {
+      title: 'Clamp',
+      component: ClampComponent,
+      image: 'clamp.jpg',
+    },
+    {
+      title: 'Switches',
+      component: SwitchesComponent,
+      image: 'switches.jpg'
+    },
+    {
+      title:'Dark Mode',
+      component: DarkModeComponent,
+      image: 'dark-mode.jpg'
     }
   ]);
 

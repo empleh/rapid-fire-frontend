@@ -1,0 +1,17 @@
+<app-modal-header></app-modal-header>
+
+<ion-content>
+  <ion-list>
+    @for (item of items(); let i = $index; track i) {
+      <ion-item>
+        <ion-label>
+          Item {{ i + 1 }}
+        </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

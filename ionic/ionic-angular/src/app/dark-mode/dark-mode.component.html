@@ -1,0 +1,12 @@
+<app-modal-header></app-modal-header>
+
+<div class="wrapper" [class.dark-theme]="darkMode()">
+  <header>
+    <h1>Dark Mode Demo</h1>
+  </header>
+  <ion-button class="theme-toggle" (click)="darkMode.set(!darkMode())">Toggle Theme</ion-button>
+  <main>
+    <p>Welcome to the dark mode demo. Click the button above to switch themes.</p>
+  </main>
+
+</div>
