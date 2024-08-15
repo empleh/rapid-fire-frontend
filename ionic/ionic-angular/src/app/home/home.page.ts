@@ -54,7 +54,7 @@ export class HomePage {
     {
       title: 'Animate on scroll',
       component: AnimateOnScrollComponent,
-      image: 'animate-on-scroll.jpg',
+      image: 'scroll-animation.jpg',
     },
     {
       title: 'Card Flip',

@@ -1,6 +1,5 @@
-import { NgIf } from '@angular/common';
-import { Component, OnInit, inject, Input } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { Component, inject, Input } from '@angular/core';
+import { IonButton, IonButtons, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { NavUtilityService } from '../nav-utility.service';
 
 @Component({
@@ -9,18 +8,18 @@ import { NavUtilityService } from '../nav-utility.service';
   styleUrls: ['./modal-header.component.scss'],
   standalone: true,
   imports: [
-    IonicModule,
-    NgIf,
+    IonHeader,
+    IonToolbar,
+    IonButtons,
+    IonTitle,
+    IonButton
   ]
 })
-export class ModalHeaderComponent implements OnInit {
+export class ModalHeaderComponent {
   private navUtility: NavUtilityService = inject(NavUtilityService);
   @Input() title?: string;
 
   constructor() {
-  }
-
-  ngOnInit() {
   }
 
   async close() {

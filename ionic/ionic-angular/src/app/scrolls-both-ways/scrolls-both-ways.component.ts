@@ -1,7 +1,5 @@
-import { NgForOf } from '@angular/common';
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { images } from 'ionicons/icons';
 import { ModalHeaderComponent } from '../modal-header/modal-header.component';
 
 @Component({
@@ -11,18 +9,10 @@ import { ModalHeaderComponent } from '../modal-header/modal-header.component';
   standalone: true,
   imports: [
     IonicModule,
-    NgForOf,
     ModalHeaderComponent
   ]
 })
-export class ScrollsBothWaysComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
+export class ScrollsBothWaysComponent {
   protected readonly images = signal<string[]>([
     'https://via.placeholder.com/50',
     'https://via.placeholder.com/50',

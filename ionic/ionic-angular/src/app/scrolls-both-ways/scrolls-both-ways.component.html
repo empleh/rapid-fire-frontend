@@ -7,15 +7,24 @@
     </p>
 
     <ul class="horizontal">
-      <li *ngFor="let i of images()">
-        <ion-img [src]="i"></ion-img>
+      @for (img of images(); let i = $index; track i) {
+      <li>
+        <ion-img [src]="img"></ion-img>
       </li>
+      }
     </ul>
 
     <ul class="vertical">
-      <li *ngFor="let i of images()">
-        <ion-img [src]="i"></ion-img>
+      @for (img of images(); let i = $index; track i) {
+      <li>
+        <ion-img [src]="img"></ion-img>
       </li>
+      }
+      @empty {
+      <li>
+        No images
+      </li>
+      }
     </ul>
   </div>
 </ion-content>
