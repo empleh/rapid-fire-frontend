@@ -1,0 +1,28 @@
+input {
+  background-color: transparent;
+}
+
+.floating-wrapper {
+  position: relative;
+
+  input {
+    border: 2px solid #00ffff;
+
+    &:focus {
+      border-color: #ff00ff;
+
+      & ~ label {
+        top: -50%;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: 0.3s
+  }
+}
