@@ -6,44 +6,31 @@
   width: 100%;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
-}
-
-#circle {
-  width: 100%;
-  height: 100%;
-  border: 20px solid #ffdd00;
-  border-radius: 100%;
-  float: left;
-}
-
-#slider {
   position: relative;
-  height: 32px;
-  width: 32px;
-  background: blue;
-  left: -16px;
-  top: 16px;
-  border-radius: 100%;
-  cursor: pointer;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  -moz-appearance: none;
-  border: 2px solid #e6e6e6;
-  border-radius: 4px;
-  color: #818181;
-  display: none;
-  font-size: 1em;
-  height: 30px;
-  padding: 0 6px;
-  transition: border 0s ease 0s, width 0.4s ease-in-out 0s;
+ion-range {
+  z-index: 100;
+}
+
+ion-range::part(bar) {
+  background: transparent;
+}
+
+ion-range::part(bar-active) {
+  background: transparent;
+}
+
+ion-range::part(knob) {
+  background: blue;
+  margin-top: -22px;
 }
 
 .range {
+  padding-top: 100px;
   float: left;
-  width: 30px;
+  width: 200px;
+  cursor: pointer;
 }
 
 .value {
@@ -51,7 +38,7 @@ input[type="password"] {
   color: black;
   text-align: center;
   position: relative;
-  top: -25%;
+  top: 0;
 }
 
 
@@ -65,44 +52,6 @@ input[type="password"] {
 
   background-color: #f0f0f0;
   color: #f0f0f0;
-}
-
-.slider {
-  -webkit-appearance: none; /* Override default CSS styles */
-  appearance: none;
-  width: 100%; /* Full-width */
-  border-radius: 50px; /* Rounded slider */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-}
-
-.circle-slider__inner {
   position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  overflow: hidden;
 }
 
-.circle-slider__inner__circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.circle-slider__inner__circle__handle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
